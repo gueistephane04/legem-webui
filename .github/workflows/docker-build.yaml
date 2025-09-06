@@ -1,10 +1,9 @@
 name: Build and Push Docker Image
 
-# Se déclenche à chaque fois que vous poussez du code sur la branche 'main'
+# Permet de déclencher ce workflow manuellement depuis l'onglet Actions
 on:
-  push:
-    branches: [ "main" ]
-
+  workflow_dispatch:
+  
 jobs:
   build-and-push:
     runs-on: ubuntu-latest
